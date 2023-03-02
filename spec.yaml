@@ -1,9 +1,15 @@
 fabric:
+  cas:
+  - "ca.org0.example.com"
+  - "ca.org1.example.com"
+  - "ca.org2.example.com"
   peers: 
   - "peer0.org0.example.com"
   - "peer1.org0.example.com"
   - "peer0.org1.example.com"
   - "peer1.org1.example.com"
+  - "peer0.org2.example.com"
+  - "peer1.org2.example.com"
   orderers:
   - "orderer1.example.com"
   - "orderer2.example.com"
@@ -22,8 +28,8 @@ fabric:
   goproxy: "https://goproxy.cn,direct"
   ### set the endpoint address to override the automatically detected IP address
   ### could be a public IP address or a dns name
-  endpoint_address: "192.168.80.72"
+  endpoint_address: "192.168.128.128"
   ### set the docker network name to override the automatically generated name.
   netname: "testnetwork"
   ### set the extra optins for docker run command
-  container_options: "--restart=always --log-opt max-size=10m --log-opt max-file=3"
+  # container_options: "--restart=always --log-opt max-size=10m --log-opt max-file=3"
